@@ -6,7 +6,7 @@
 			"use": "@vercel/react"
 		},
 		{
-			"src": "backend/server.js",
+			"src": "api/server.js",
 			"use": "@vercel/node"
 		}
 	],
@@ -16,8 +16,8 @@
 			"dest": "/frontend/build/$1"
 		},
 		{
-			"src": "/backend/(.*)",
-			"dest": "/backend/server.js"
+			"src": "/api/(.*)",
+			"dest": "/api/server.js"
 		}
 	]
 }
